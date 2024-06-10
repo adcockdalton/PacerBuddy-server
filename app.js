@@ -22,6 +22,7 @@ app.get("/status", (request, response) => {
 
 app.post("/startrover", (request, response) => {
   const { pace } = request.body;
+  console.log("pace", pace);
   runPythonScript("starter-projs/Rover/index.py", [pace]);
 
   const res = {
