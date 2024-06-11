@@ -1,5 +1,5 @@
-const express = require('express');
-const { spawn } = require('child_process');
+const express = require("express");
+const { spawn } = require("child_process");
 
 let pythonProcess;
 
@@ -13,53 +13,53 @@ app.listen(PORT, () => {
 });
 
 app.get("/status", (request, response) => {
-   const status = {
-      "Status": "Running"
-   };
-   
-   response.send(status);
+  const status = {
+    Status: "Running",
+  };
+
+  response.send(status);
 });
 
 app.post("/startrover", (request, response) => {
   const { pace } = request.body;
   console.log("pace", pace);
-  runPythonScript("starter-projs/Rover/index.py", [pace]);
+  runPythonScript("Rover/index.py", [pace]);
 
   const res = {
-    "Rover": "on"
+    Rover: "on",
   };
 
   response.send(res);
 });
 
 app.post("/killrover", (request, response) => {
-  if(pythonProcess) {
-    pythonProcess.kill('SIGINT');
+  if (pythonProcess) {
+    pythonProcess.kill("SIGINT");
   }
 
   const res = {
-    "Rover": "off"
+    Rover: "off",
   };
 
   response.send(res);
-})
+});
 
 // Function to run a Python script asynchronously
 function runPythonScript(scriptPath, args) {
-  pythonProcess = spawn('python', [scriptPath].concat(args));
+  pythonProcess = spawn("python", [scriptPath].concat(args));
 
   // Handle standard output
-  pythonProcess.stdout.on('data', (stdout) => {
+  pythonProcess.stdout.on("data", (stdout) => {
     console.log(`stdout: ${stdout.toString()}`);
   });
 
   // Handle standard error
-  pythonProcess.stderr.on('data', (stderr) => {
+  pythonProcess.stderr.on("data", (stderr) => {
     console.error(`stderr: ${stderr.toString()}`);
   });
 
   // Handle process exit
-  pythonProcess.on('close', (code) => {
+  pythonProcess.on("close", (code) => {
     console.log(`child process exited with code ${code}`);
   });
 }
