@@ -11,3 +11,12 @@
 ## Pacer Buddy React Native App
 
 [Repo](https://github.com/tyleryy/PacerBuddyApp/tree/main)
+
+
+## Rover Hardware
+
+![IMG_8830](https://github.com/adcockdalton/PacerBuddy-server/assets/66880934/470efc30-461b-43f6-ae1a-55feb8e14b34)
+
+## Demo Vid
+
+[Demo Vid](https://youtu.be/0elPFSeF_fs)
