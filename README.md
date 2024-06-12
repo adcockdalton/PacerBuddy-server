@@ -8,6 +8,9 @@
 
 [LucidChart Diagram](https://lucid.app/lucidchart/76e528ee-952c-4684-9fdf-a60ea74e1a56/edit?view_items=frpKZd4.zPeV&invitationId=inv_2bf49015-730d-4159-b9a2-5710e72b95d7)
 
+![Screenshot 2024-06-11 at 5 00 42 PM](https://github.com/adcockdalton/PacerBuddy-server/assets/66880934/381400b5-e31a-4669-83b0-32d3dec890a0)
+
+
 ## Pacer Buddy React Native App
 
 [Repo](https://github.com/tyleryy/PacerBuddyApp/tree/main)
