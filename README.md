@@ -3,6 +3,8 @@
 - runs Express Node Server using an Ngrok tunnel exposing the Raspberry Pi endpoint to internet for connection to our React Native mobile app
 - uses the GPIOzero python library to interface with the Raspberry Pi's GPIO pins and control motors on our rover
 
+[React Native Mobile App Repo](https://github.com/tyleryy/PacerBuddyApp/tree/main)
+[Demo Vid](https://youtu.be/0elPFSeF_fs)
 
 ## Architecture:
 
@@ -11,15 +13,8 @@
 ![Screenshot 2024-06-11 at 5 00 42 PM](https://github.com/adcockdalton/PacerBuddy-server/assets/66880934/381400b5-e31a-4669-83b0-32d3dec890a0)
 
 
-## Pacer Buddy React Native App
-
-[Repo](https://github.com/tyleryy/PacerBuddyApp/tree/main)
-
-
 ## Rover Hardware
 
 ![IMG_8830](https://github.com/adcockdalton/PacerBuddy-server/assets/66880934/470efc30-461b-43f6-ae1a-55feb8e14b34)
 
-## Demo Vid
 
-[Demo Vid](https://youtu.be/0elPFSeF_fs)
